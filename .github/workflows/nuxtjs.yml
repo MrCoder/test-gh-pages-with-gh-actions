@@ -38,7 +38,7 @@ jobs:
             echo "package_command=install" >> $GITHUB_ENV
             exit 0
           elif [ -f "${{ github.workspace }}/package.json" ]; then
-            echo ":package_manager=npm" >> $GITHUB_ENV
+            echo "package_manager=npm" >> $GITHUB_ENV
             echo "package_command=ci"  >> $GITHUB_ENV
             exit 0
           else
