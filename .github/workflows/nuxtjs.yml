@@ -70,7 +70,7 @@ jobs:
       - name: Install dependencies
         run: ${{ env.package_manager }} ${{ env.package_command }}
       - name: Static HTML export with Nuxt
-        run: ${{ env.package-manager }} run generate
+        run: ${{ env.package_manager }} run generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
